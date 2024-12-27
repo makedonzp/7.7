@@ -15,4 +15,7 @@ function calculate(a, b, operator) {
 }
 
 const args = [2, 3, "+"];
-console.log(calculate.apply(null, args));
+document
+  .querySelector(`.${taskClass[1]}`)
+  .insertAdjacentHTML("beforeend", `<p class="task-2"> ${args} </p>`);
+calculate.apply(null, args);

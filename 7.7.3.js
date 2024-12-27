@@ -9,4 +9,6 @@ const users = [
 const adults = users.filter((user) => user.age >= 18);
 const names = adults.map((user) => user.name);
 
-console.log(names);
+document.querySelector(
+  `.${taskClass[2]}`
+).innerHTML += `<p class="task-3"> ${names} </p>`;

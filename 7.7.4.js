@@ -3,12 +3,14 @@ function setFullName(fullName) {
   this.fullName = fullName;
 }
 
-const person = {
+const personName = {
   name: "Коля",
   age: 30,
 };
 
-const setPersonFullName = setFullName.bind(person);
+const setPersonFullName = setFullName.bind(personName);
 setPersonFullName("Коля Николаев");
 
-console.log(person.fullName);
+document.querySelector(
+  `.${taskClass[3]}`
+).innerHTML += `<p class="task-4"> ${personName.fullName} </p>`;

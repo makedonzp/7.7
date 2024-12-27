@@ -7,4 +7,6 @@ function getUniqueSortedArray(arr) {
 const numbers = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
 const uniqueSortedNumbers = getUniqueSortedArray(numbers);
 
-console.log(uniqueSortedNumbers);
+document.querySelector(
+  `.${taskClass[4]}`
+).innerHTML += `<p class="task-5"> ${uniqueSortedNumbers} </p>`;
